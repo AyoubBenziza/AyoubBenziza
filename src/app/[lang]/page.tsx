@@ -49,7 +49,7 @@ export default function Home({
         </Reveal>
         <Reveal>
           <h3 className="w-full text-xs my-2 sm:text-xl lg:text-xl font-semibold text-center md:text-left lg:text-left">
-            J'aime réaliser des sites internets avec des bonnes expériences
+            J&apos;aime réaliser des sites internets avec des bonnes expériences
             utilisateur
             <br />
             et découvrir les dernières technologies actuelles.
