@@ -49,7 +49,7 @@ export const Reveal = ({ children, width = "fit-content" }: Props) => {
           left: 0,
           right: 0,
           background: "#00ff40",
-          zIndex: 20,
+          zIndex: 5,
         }}
       />
     </div>

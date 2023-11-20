@@ -10,5 +10,21 @@
     "light": "Clair",
     "dark": "Sombre",
     "system": "Système"
+  },
+  "contact": {
+    "title": "Contactez Moi",
+    "description": "Déployer votre nouveau projet en un click.",
+    "name": {
+      "label": "Nom",
+      "placeholder": "Votre nom"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Votre email"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Tapez votre message ici."
+    }
   }
 }

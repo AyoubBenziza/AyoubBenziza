@@ -28,7 +28,7 @@ export function middleware(request: NextRequest) {
   request.nextUrl.pathname = `/${locale}${pathname}`;
   // e.g. incoming request is /products
   // The new URL is now /en-US/products
-  return Response.redirect(request.nextUrl);
+  return NextResponse.redirect(request.nextUrl);
 }
 
 export const config = {

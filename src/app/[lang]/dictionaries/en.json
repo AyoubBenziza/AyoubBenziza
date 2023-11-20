@@ -10,5 +10,21 @@
     "light": "Light",
     "dark": "Dark",
     "system": "System"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "Deploy your new project in one-click.",
+    "name": {
+      "label": "Name",
+      "placeholder": "Your Name"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Your email"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Type your message here."
+    }
   }
 }
