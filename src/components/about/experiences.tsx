@@ -23,55 +23,6 @@ const experiencesData = [
     icon: React.createElement(FaRunning),
     date: "Octobre 2023",
   },
-  {
-    title: "Hackathon",
-    location: "Montpellier, France",
-    description: "Projet sur Angular",
-    icon: React.createElement(FaRunning),
-    date: "Octobre 2023",
-  },
-  {
-    title: "Hackathon",
-    location: "Montpellier, France",
-    description: "Projet sur Angular",
-    icon: React.createElement(FaRunning),
-    date: "Octobre 2023",
-  },
-  {
-    title: "Hackathon",
-    location: "Montpellier, France",
-    description: "Projet sur Angular",
-    icon: React.createElement(FaRunning),
-    date: "Octobre 2023",
-  },
-  {
-    title: "Hackathon",
-    location: "Montpellier, France",
-    description: "Projet sur Angular",
-    icon: React.createElement(FaRunning),
-    date: "Octobre 2023",
-  },
-  {
-    title: "Hackathon",
-    location: "Montpellier, France",
-    description: "Projet sur Angular",
-    icon: React.createElement(FaRunning),
-    date: "Octobre 2023",
-  },
-  {
-    title: "Hackathon",
-    location: "Montpellier, France",
-    description: "Projet sur Angular",
-    icon: React.createElement(FaRunning),
-    date: "Octobre 2023",
-  },
-  {
-    title: "Hackathon",
-    location: "Montpellier, France",
-    description: "Projet sur Angular",
-    icon: React.createElement(FaRunning),
-    date: "Octobre 2023",
-  },
 ];
 
 export default function Experiences() {
