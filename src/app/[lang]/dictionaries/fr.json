@@ -11,6 +11,21 @@
     "dark": "Sombre",
     "system": "Système"
   },
+  "home": {
+    "welcome": "Bonjour, je suis",
+    "job": "Développeur Web",
+    "nationality": "Français",
+    "description": "J'aime réaliser des sites internets avec des bonnes expériences utilisateur et découvrir les dernières technologies actuelles.",
+    "hire": "Me recruter",
+    "download": "Télécharger"
+  },
+  "about": {
+    "dashboard": {
+      "skills": "Compétences",
+      "education": "Formations",
+      "experiences": "Expériences"
+    }
+  },
   "contact": {
     "title": "Contactez Moi",
     "description": "Déployer votre nouveau projet en un click.",

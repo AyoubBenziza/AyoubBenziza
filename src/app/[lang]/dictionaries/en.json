@@ -11,6 +11,21 @@
     "dark": "Dark",
     "system": "System"
   },
+  "home": {
+    "welcome": "Hello, I'm",
+    "job": "Software Enginner",
+    "nationality": "French",
+    "description": "I love designing websites with good user experiences and discovering the latest technologies.",
+    "hire": "Hire me",
+    "download": "Download"
+  },
+  "about": {
+    "dashboard": {
+      "skills": "Skills",
+      "education": "Education",
+      "experiences": "Experiences"
+    }
+  },
   "contact": {
     "title": "Contact Me",
     "description": "Deploy your new project in one-click.",
