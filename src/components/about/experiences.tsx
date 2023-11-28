@@ -5,23 +5,30 @@ import { VerticalTimeline } from "react-vertical-timeline-component";
 
 import TimelineElement from "./timeline-element";
 
-import { LuGraduationCap } from "react-icons/lu";
+import Image from "next/image";
 import { FaRunning } from "react-icons/fa";
 
 const experiencesData = [
   {
     title: "InQompass",
-    location: "Distanciel",
-    description: "Projet sur Angular",
-    icon: React.createElement(LuGraduationCap),
-    date: "Mai-Juillet 2023",
+    location: "Remote",
+    description: "Angular/Typescript/Firebase",
+    icon: (
+      <Image
+        src={`/logo/angular.webp`}
+        alt="Angular"
+        fill
+        sizes="(min-width=300px) 100vw, 100vh"
+      />
+    ),
+    date: "May-July 2023",
   },
   {
     title: "Hackathon",
     location: "Montpellier, France",
-    description: "Projet sur Angular",
+    description: "Flutter/MySQL/PHPMyAdmin",
     icon: React.createElement(FaRunning),
-    date: "Octobre 2023",
+    date: "14-15 October 2023",
   },
 ];
 
@@ -31,7 +38,6 @@ export default function Experiences() {
       id="experiences"
       className="w-full h-full flex flex-col items-center justify-between"
     >
-      <h1>My Experiences</h1>
       <VerticalTimeline className="w-full" lineColor="#e5e7eb">
         {experiencesData.map((experience, index) => (
           <TimelineElement key={index} item={experience} />

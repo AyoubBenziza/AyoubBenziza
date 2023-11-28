@@ -42,7 +42,12 @@ export function NavMobile({ lang, dashboard }: Props) {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline" size="icon">
+        <Button
+          name="navMobile"
+          aria-label="navMobile"
+          variant="outline"
+          size="icon"
+        >
           <HamburgerMenuIcon />
         </Button>
       </SheetTrigger>
@@ -53,14 +58,14 @@ export function NavMobile({ lang, dashboard }: Props) {
         <nav className="flex flex-col py-4 items-center">
           {navLinks.map((link, index) => {
             return (
-              <div key={index} className="w-full grid justify-items-center">
-                <ul>
+              <ul key={index} className="w-full grid justify-items-center">
+                <li>
                   <Link href={`/${lang}${link.path}`}>
-                    <li key={index}>{link.name}</li>
+                    <h3 key={index}>{link.name}</h3>
                   </Link>
-                </ul>
+                </li>
                 <Separator key={index} className="w-1/2 py-1 my-2 rounded" />
-              </div>
+              </ul>
             );
           })}
         </nav>

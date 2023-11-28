@@ -1,8 +1,9 @@
-import PixelBackground from "@/components/pixelBackground";
-import { Locale, getDictionary } from "../dictionaries";
+"use client";
+
+import Experiences from "@/components/about/experiences";
 import Skills from "@/components/about/skills";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import Experiences from "@/components/about/experiences";
+import { Locale, getDictionary } from "../dictionaries";
 
 export default async function About({
   params: { lang },
@@ -31,7 +32,6 @@ export default async function About({
           <Experiences />
         </TabsContent>
       </Tabs>
-      <PixelBackground />
     </main>
   );
 }

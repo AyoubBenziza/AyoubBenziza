@@ -6,15 +6,12 @@ import "./dashboard.css";
 
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import { PersonIcon } from "@radix-ui/react-icons";
 
 import { Locale } from "@/app/[lang]/dictionaries";
 import NavMobile from "./navMobile";
@@ -62,16 +59,18 @@ export function Dashboard({ lang, t }: Props) {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
-      <NavigationMenu className="space-x-1">
-        <NavigationMenuItem>
-          <SwitchLanguage lang={lang} t={t} />
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <ModeToggle t={t} />
-        </NavigationMenuItem>
-        <NavigationMenuItem className="md:hidden lg:hidden">
-          <NavMobile lang={lang} dashboard={t.dashboard} />
-        </NavigationMenuItem>
+      <NavigationMenu>
+        <ul className="list-none flex space-x-1">
+          <NavigationMenuItem>
+            <SwitchLanguage lang={lang} t={t} />
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <ModeToggle t={t} />
+          </NavigationMenuItem>
+          <NavigationMenuItem className="md:hidden lg:hidden">
+            <NavMobile lang={lang} dashboard={t.dashboard} />
+          </NavigationMenuItem>
+        </ul>
       </NavigationMenu>
     </nav>
   );

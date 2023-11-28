@@ -1,10 +1,9 @@
+import { Dashboard } from "@/components/dashboard";
+import { ThemeProvider } from "@/components/theme/theme-provider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import PixelBackground from "@/components/pixelBackground";
-import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Locale, getDictionary } from "./dictionaries";
-import { Dashboard } from "@/components/dashboard";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,7 +33,6 @@ export default async function RootLayout({
             <Dashboard lang={lang} t={t} />
             {children}
           </main>
-          <PixelBackground />
         </ThemeProvider>
       </body>
     </html>

@@ -1,5 +1,3 @@
-"use client";
-
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -7,19 +5,19 @@ export default function Skills() {
   const skillsData: { name: string; logo: string }[] = [
     {
       name: "TypeScript",
-      logo: "ts.png",
+      logo: "ts.webp",
     },
     {
       name: "NextJS",
-      logo: "next-js.png",
+      logo: "next-js.webp",
     },
     {
       name: "Angular",
-      logo: "angular.png",
+      logo: "angular.webp",
     },
     {
       name: "React",
-      logo: "react.png",
+      logo: "react.webp",
     },
     {
       name: "Docker",
@@ -27,23 +25,23 @@ export default function Skills() {
     },
     {
       name: "Node.js",
-      logo: "node-js.png",
+      logo: "node-js.webp",
     },
     {
       name: "Express",
-      logo: "express.png",
+      logo: "express.webp",
     },
     {
       name: "Framer Motion",
-      logo: "framer-motion.png",
+      logo: "framer-motion.webp",
     },
     {
       name: "Tailwind CSS",
-      logo: "tailwind.png",
+      logo: "tailwind.webp",
     },
     {
       name: "MySQL",
-      logo: "mysql.png",
+      logo: "mysql.webp",
     },
   ];
 

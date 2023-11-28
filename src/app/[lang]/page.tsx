@@ -1,6 +1,5 @@
 "use client";
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/utils/reveal";
 import {
@@ -9,10 +8,11 @@ import {
   LinkedInLogoIcon,
   PaperPlaneIcon,
 } from "@radix-ui/react-icons";
+import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { Locale, getDictionary } from "./dictionaries";
-import Link from "next/link";
-import PixelBackground from "@/components/pixelBackground";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import Image from "next/image";
 
 export default async function Home({
   params: { lang },
@@ -50,9 +50,9 @@ export default async function Home({
           </h1>
         </Reveal>
         <Reveal>
-          <h3 className="w-full text-xs my-2 sm:text-xl lg:text-xl font-semibold text-center md:text-left lg:text-left">
+          <h2 className="w-full text-xs my-2 sm:text-xl lg:text-xl font-semibold text-center md:text-left lg:text-left">
             {t.description}
-          </h3>
+          </h2>
           <div className="w-full md:flex lg:flex grid grid-cols-2 justify-items-center gap-y-4 items-center md:space-x-2 md:justify-start lg:justify-start lg:space-x-2">
             <Link href={`/${lang}/contact`}>
               <Button>
@@ -80,11 +80,18 @@ export default async function Home({
           </div>
         </Reveal>
       </div>
-      <Avatar className="w-[300px] h-[300px]">
-        <AvatarImage src="profile.jpg" alt="Avatar" />
-        <AvatarFallback>Avatar</AvatarFallback>
-      </Avatar>
-      <PixelBackground />
+      <div className="w-[300px] h-[300px]">
+        <AspectRatio ratio={1 / 1}>
+          <Image
+            src="/profile.webp"
+            alt="Avatar"
+            fill
+            priority
+            sizes="(min-width=300px) 100vw, 300px"
+            className="rounded-full"
+          />
+        </AspectRatio>
+      </div>
     </section>
   );
 }
