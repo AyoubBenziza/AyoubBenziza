@@ -48,7 +48,7 @@ type ContactProps = {
   };
 };
 
-export default function contactForm({ t }: { t: ContactProps }) {
+export default function ContactForm({ t }: { t: ContactProps }) {
   const form = useForm<z.infer<typeof contactFormData>>({
     resolver: zodResolver(contactFormData),
     defaultValues: {
