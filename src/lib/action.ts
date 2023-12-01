@@ -13,7 +13,7 @@ export async function sendEmail(data: Inputs) {
   await resend.emails.send({
     from: "contact@ayoubbenziza.com",
     to: data.email,
-    subject: "Confirmation d'envoi du mail",
+    subject: "Email Confirmation",
     react: MailContact({
       name: data.name,
       magicLink: "https://ayoubbenziza.com",
