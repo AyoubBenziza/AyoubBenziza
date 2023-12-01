@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Locale, getDictionary } from "./dictionaries";
 import "./globals.css";
+import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,7 @@ export default async function RootLayout({
           <main className="w-full h-screen flex flex-col items-center">
             <Dashboard lang={lang} t={t} />
             {children}
+            <Toaster richColors={true} />
           </main>
         </ThemeProvider>
       </body>

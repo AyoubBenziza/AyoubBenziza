@@ -26,6 +26,9 @@
       "experiences": "Expériences"
     }
   },
+  "projects": {
+    "title": "Projets"
+  },
   "contact": {
     "title": "Contactez Moi",
     "description": "Déployer votre nouveau projet en un click.",

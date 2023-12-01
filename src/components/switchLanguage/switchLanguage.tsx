@@ -1,7 +1,7 @@
 "use client";
 
 import { Locale } from "@/app/[lang]/dictionaries";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { FC } from "react";
 import {
   DropdownMenu,
@@ -19,10 +19,15 @@ type Props = {
 };
 
 const SwitchLanguage: FC<Props> = ({ lang, t }) => {
+  const pathname = usePathname();
   const router = useRouter();
+
   const changeLanguage = (lang: Locale) => {
-    router.push(`/${lang}`);
+    let url = pathname.substring(pathname.lastIndexOf("/") + 1);
+    console.log(url);
+    url.length >= 4 ? router.push(`/${lang}/${url}`) : router.push(`/${lang}`);
   };
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>

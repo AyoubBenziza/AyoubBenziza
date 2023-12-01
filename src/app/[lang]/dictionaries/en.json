@@ -26,6 +26,9 @@
       "experiences": "Experiences"
     }
   },
+  "projects": {
+    "title": "Projects"
+  },
   "contact": {
     "title": "Contact Me",
     "description": "Deploy your new project in one-click.",
