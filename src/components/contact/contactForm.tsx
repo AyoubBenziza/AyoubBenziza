@@ -46,6 +46,13 @@ type ContactProps = {
     label: string;
     placeholder: string;
   };
+  loading: string;
+  error: string;
+  confirmation: string;
+  button: {
+    loading: string;
+    send: string;
+  };
 };
 
 export default function ContactForm({ t }: { t: ContactProps }) {
@@ -63,16 +70,16 @@ export default function ContactForm({ t }: { t: ContactProps }) {
     setPending(true);
 
     toast.promise(sendEmail(data), {
-      loading: "Loading...",
+      loading: t.loading,
       success: (data) => {
         setPending(false);
         form.reset();
-        return "Email has been sent";
+        return t.confirmation;
       },
       error: (data) => {
         setPending(false);
         form.reset();
-        return "Uh oh! Someting went wrong.";
+        return t.error;
       },
     });
   };
@@ -147,10 +154,10 @@ export default function ContactForm({ t }: { t: ContactProps }) {
             {pending ? (
               <Button disabled>
                 <ReloadIcon className="mr-2 h-4 w-4 animate-spin" />
-                Please wait
+                {t.button.loading}
               </Button>
             ) : (
-              <Button type="submit">Send</Button>
+              <Button type="submit">{t.button.send}</Button>
             )}
           </CardFooter>
         </Card>

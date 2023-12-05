@@ -43,6 +43,13 @@
     "message": {
       "label": "Message",
       "placeholder": "Type your message here."
+    },
+    "loading": "Loading...",
+    "error": "Uh oh! Someting went wrong.",
+    "confirmation": "Email has been sent",
+    "button": {
+      "loading": "Please wait",
+      "send": "Send"
     }
   }
 }

@@ -43,6 +43,13 @@
     "message": {
       "label": "Message",
       "placeholder": "Tapez votre message ici."
+    },
+    "loading": "Chargement...",
+    "error": "Uh oh! Un problème est survenu.",
+    "confirmation": "L'email a bien été envoyé",
+    "button": {
+      "loading": "Veuillez patienter",
+      "send": "Envoyer"
     }
   }
 }

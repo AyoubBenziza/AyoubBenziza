@@ -32,7 +32,7 @@ export const MailContact = ({
   <Tailwind>
     <Html>
       <Head />
-      <Preview>Log in with this magic link.</Preview>
+      <Preview>Request Email Confirmation</Preview>
       <Body className="bg-white font-sans">
         <Container className="mx-auto">
           <Img
