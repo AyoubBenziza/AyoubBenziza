@@ -8,8 +8,9 @@ import { Toaster } from "@/components/ui/sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ayoub Benziza",
-  description: "My Portfolio",
+  title: "Ayoub Benziza | Software Enginner",
+  description:
+    "Hi, I'm Ayoub Benziza and this is my portfolio site. I'm a French web developer, living in Montpellier, France. I've always been passionate about technology and how it has advanced over the years. In my final year of high school, I was introduced to IT development and knew that this was what I wanted to do later in life.",
 };
 
 export default function RootLayout({
