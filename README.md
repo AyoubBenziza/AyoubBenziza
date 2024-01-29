@@ -8,7 +8,7 @@
 
 <br clear="both">
 
-<img style="display: block; margin: 0 auto" height="150" src="https://avatars.githubusercontent.com/u/64789925?v=4"  />
+<img align="center" style="display: block; margin: 0 auto" height="150" src="https://avatars.githubusercontent.com/u/64789925?v=4"  />
 
 ###
 
