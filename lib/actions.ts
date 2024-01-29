@@ -5,6 +5,7 @@ import { Client } from "@notionhq/client";
 import Filter from "bad-words";
 import { z } from "zod";
 import { GITHUB_USERNAME } from "./config";
+import { cache } from "react";
 
 const notion = new Client({ auth: process.env.NOTION_API_TOKEN });
 const filter = new Filter();
@@ -55,7 +56,7 @@ export const addComment = async ({
   }
 };
 
-export const getComments = async () => {
+export const getComments = cache(async () => {
   if (!process.env.NOTION_DATABASE_ID)
     throw new Error("Missing Notion Secret Id");
   const response = await notion.databases.query({
@@ -78,9 +79,9 @@ export const getComments = async () => {
     };
   });
   return comments;
-};
+});
 
-export const getGitHubRepositories = async () => {
+export const getGitHubRepositories = cache(async () => {
   if (!process.env.GITHUB_TOKEN) throw new Error("GitHub Token Required");
   const query = `
   {
@@ -108,4 +109,4 @@ export const getGitHubRepositories = async () => {
     body: JSON.stringify({ query }),
   }).then((r) => r.json());
   return response.data.user.pinnedItems.nodes;
-};
+});

@@ -5,6 +5,8 @@ import { HeroSection } from "@/components/hero/HeroSection";
 import { ProjectSection } from "@/components/project/ProjectSection";
 import { SkillSection } from "@/components/skill/SkillSection";
 
+export const revalidate = 3;
+
 export default function Home() {
   return (
     <main className="w-full h-screen flex flex-col">
