@@ -1,19 +1,19 @@
 import { SectionWrapper } from "@/components/atom/SectionWrapper";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   SiAngular,
   SiDocker,
   SiExpress,
   SiFigma,
-  SiGithub,
-  SiIonic,
+  SiGit,
   SiLinux,
   SiMysql,
   SiPython,
   SiReact,
   SiWindows11,
 } from "react-icons/si";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { TbBrandNextjs } from "react-icons/tb";
 
 export const SkillSection = () => {
   return (
@@ -38,16 +38,16 @@ export const SkillSection = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="flex flex-row space-x-1">
-                  <SiAngular className="text-base sm:text-3xl text-red-600" />
-                  <p className="text-xl">Angular</p>
+                  <TbBrandNextjs className="text-base sm:text-3xl text-neutral-400" />
+                  <p className="text-xl">NextJS</p>
                 </CardContent>
                 <CardContent className="flex flex-row space-x-1">
-                  <SiReact className="text-base sm:text-3xl text-blue-600" />
+                  <SiReact className="text-base sm:text-3xl text-sky-400" />
                   <p className="text-xl">React</p>
                 </CardContent>
                 <CardContent className="flex flex-row space-x-1">
-                  <SiIonic className="text-base sm:text-3xl text-blue-700" />
-                  <p className="text-xl">Ionic</p>
+                  <SiAngular className="text-base sm:text-3xl text-red-600" />
+                  <p className="text-xl">Angular</p>
                 </CardContent>
               </Card>
             </TabsContent>
@@ -67,7 +67,7 @@ export const SkillSection = () => {
                   <p className="text-xl">Python</p>
                 </CardContent>
                 <CardContent className="flex flex-row space-x-1">
-                  <SiExpress className="text-base sm:text-3xl text-gray-600" />
+                  <SiExpress className="text-base sm:text-3xl text-gray-950" />
                   <p className="text-xl">Express.js</p>
                 </CardContent>
               </Card>
@@ -84,12 +84,12 @@ export const SkillSection = () => {
                   <p className="text-xl">Docker</p>
                 </CardContent>
                 <CardContent className="flex flex-row space-x-1">
-                  <SiFigma className="text-base sm:text-3xl text-indigo-600" />
+                  <SiFigma className="text-base sm:text-3xl text-indigo-300" />
                   <p className="text-xl">Figma</p>
                 </CardContent>
                 <CardContent className="flex flex-row space-x-1">
-                  <SiGithub className="text-base sm:text-3xl text-red-600" />
-                  <p className="text-xl">Git & Github</p>
+                  <SiGit className="text-base sm:text-3xl text-orange-600" />
+                  <p className="text-xl">Git</p>
                 </CardContent>
               </Card>
             </TabsContent>

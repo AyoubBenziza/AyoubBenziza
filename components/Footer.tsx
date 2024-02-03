@@ -1,4 +1,4 @@
-import { EMAIL, SOCIAL_NETWORKS } from "@/lib/config";
+import { SOCIAL_NETWORKS } from "@/lib/config";
 import { SocialNetworks } from "./atom/SocialNetwork";
 
 export const Footer = () => {
@@ -15,6 +15,7 @@ export const Footer = () => {
         <SocialNetworks socialNetworks={SOCIAL_NETWORKS} />
       </div>
       <p>Made with NextJS</p>
+      <p>© 2024 Ayoub Benziza</p>
     </footer>
   );
 };
