@@ -37,8 +37,7 @@
   <h3>Tools</h3>
   <img src="https://skillicons.dev/icons?i=vscode,docker,git,nodejs,bun,figma" />
   <h3>OS</h3>
-  <img src="https://img.shields.io/badge/Windows%20-%230079d5.svg?style=for-the-badge&logo=Windows%2011&logoColor=white">
-  <img src="https://skillicons.dev/icons?i=linux" />
+  <img src="https://skillicons.dev/icons?i=windows,linux" />
 </div>
 
 ###
