@@ -29,7 +29,7 @@
 ###
 
 <div align="center">
-<img src="https://spotify-recently-played-readme.vercel.app/api?user=p138s41yd1e3y3kjsgyg2x3tv&count=3">
+<img src="https://spotify-recently-played-readme.vercel.app/api?user=p138s41yd1e3y3kjsgyg2x3tv&count=1">
 </div>
 
 ###
