@@ -16,14 +16,20 @@
 
 <div align="center">
   <a href="mailto:ayoub.cbenziza@gmail.com" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
+    <img src="https://skillicons.dev/icons?i=gmail" />
   </a>
   <a href="https://www.linkedin.com/in/ayoub-benziza/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
+    <img src="https://skillicons.dev/icons?i=linkedin" />
   </a>
   <a href="https://www.ayoubbenziza.com/" target="_blank">
-     <img src="https://img.shields.io/badge/Portfolio-BF5722?style=for-the-badge&logo=GoogleChrome&logoColor=white" target="_blank" height="35" alt="portfolio logo" />
+    <img src="https://skillicons.dev/icons?i=github" />
   </a>
+</div>
+
+###
+
+<div align="center">
+<img src="https://spotify-recently-played-readme.vercel.app/api?user=p138s41yd1e3y3kjsgyg2x3tv&count=3">
 </div>
 
 ###
@@ -37,7 +43,7 @@
   <h3>Tools</h3>
   <img src="https://skillicons.dev/icons?i=vscode,docker,git,nodejs,bun,figma" />
   <h3>OS</h3>
-  <img src="https://skillicons.dev/icons?i=windows,linux" />
+  <img src="https://skillicons.dev/icons?i=windows,linux,arch" />
 </div>
 
 ###
