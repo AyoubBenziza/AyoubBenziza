@@ -29,7 +29,7 @@
 ###
 
 <div align="center">
-![Spotify recently played](https://spotify-recently-played.jeffreyca.workers.dev/svg?user=p138s41yd1e3y3kjsgyg2x3tv&theme=catppuccin&footer=wave)
+  <img src="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=p138s41yd1e3y3kjsgyg2x3tv&theme=catppuccin&footer=wave" />
 </div>
 
 ###
